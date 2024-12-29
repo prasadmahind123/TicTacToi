@@ -1,0 +1,184 @@
+*{
+    top: 0;
+    left: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #0A0A0A ;
+    position: fixed;
+}
+h2{
+    font-family: 700;
+    color: aliceblue;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.container{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:45vmin;
+
+}
+.game{
+    width: 50vmin;
+    height: 50vmin;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border: 4px solid #222;
+    box-shadow:-7px -6px 38px 5px rgba(83, 86, 82, 0.871);
+}
+.game .container1{
+    display: flex;
+    height: 33.33%;
+    width: 100%;
+    border-bottom: 2px solid #222;
+}
+.game .container1 .choice{
+    display: flex;
+    width: 100%;
+    border-right: 2px solid #222;
+}
+
+.game .container2{
+    display: flex;
+    height: 33.33%;
+    width: 100%;
+    border-bottom: 2px solid #222;
+}
+.game .container2 .choice{
+    display: flex;
+    width: 100%;
+    border-right: 2px solid #222;
+}
+.game .container3{
+    display: flex;
+    height: 33.33%;
+    width: 100%;
+    border-right: 2px solid #222;
+}
+.game .container3 .choice{
+    display: flex;
+    width: 100%;
+    border-right: 2px solid #222;
+}
+.game .container1 button{
+    background-color: aquamarine;   
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    color: #0A0A0A;
+}
+.game .container2 button{
+    font-size: 2rem;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    color: #0A0A0A;
+    background-color: aquamarine;
+    margin: 0;
+}
+.game .container3 button{
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #0A0A0A;
+    background-color: aquamarine;
+    margin: 0;
+}
+.game button:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.result{
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    color: aliceblue;
+    background-color: bisque;
+}
+.score-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 4rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+#user1-score , #user2-score{
+    font-size: 2.5rem;
+    margin: 1rem;
+    font-weight: 600;
+}
+
+.result{
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    display: inline-flex;
+    padding: 0 0.5rem;
+    border-radius: 8px;
+}
+.restart{
+    cursor: pointer;
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    background-color: #f61d1dc2;
+    display: inline-flex;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+.restart:hover{
+    opacity: 0.5;
+}
+#newGame{
+    cursor: pointer;
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    background-color: #2be30a6d;
+    display: inline-flex;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+#newGame:hover{
+    opacity: 0.5;
+}
+@media (max-width: 665px) {
+    h2{
+        font-size: 1.5rem;
+        padding-bottom: 2rem;
+        text-align: center; 
+    }
+    .game{
+        width: 50vmin;
+        height: 50vmin;
+    }
+    .result{
+        font-size: 1rem;
+        margin-left: 2rem;
+    }
+    .restart{
+        font-size: 1rem;
+    }
+    #user1-score , #user2-score{
+        font-size: 1.5rem;
+    }
+}
